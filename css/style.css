@@ -1,0 +1,222 @@
+:root{
+    --Marine: #334e68;
+    --Bleu:  #2884da;
+}
+
+@font-face {
+    font-family: "Robo";
+    src: url("../fonts/Roboto/Roboto-Regular.ttf");
+}
+
+@font-face {
+    font-family: "RoboH";
+    src: url("../fonts/Roboto_Condensed/RobotoCondensed-Bold.ttf");
+}
+
+body{
+    font-family: "Robo";
+    color: var(--Marine);
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-family: "RoboH";
+    color: var(--Marine);
+    line-height: 95%;
+}
+
+h1{
+    font-size: 5rem;
+}
+
+h2{
+    font-size: 3rem;
+}
+
+@media (max-width: 992px){
+    h2{
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 768px){
+    h1{
+        font-size: 3rem;
+    }
+}
+
+@media (max-width: 576px){
+    h1{
+        font-size: 2rem;
+    }
+}
+
+/* header */
+
+header{
+    background-image: url("../img/header-bg.jpg");
+    background-size: 100%;
+}
+
+#headerCont{
+    
+    background-color: rgba(34, 29, 107, 0.5);
+}
+
+@media (max-width: 1275px){
+    header{
+        background-size: 1275px;
+    }
+}
+
+#fadeHeader{
+    background-color: rgba(34, 29, 107, 0.5);
+    height: 60.8%;
+}
+
+#logoArc{
+    font-family: RoboH;
+    font-size: 2rem;
+    transform: rotate(-90deg) scale(3.5) translate(-42%, 105%);
+    opacity: 0.1;
+}
+
+@media (max-width: 992px){
+
+    #navBar{
+        background-color: var(--Marine);
+    }
+}
+
+@media (max-width: 768px){
+    #logoArc{
+        opacity: 0;
+    }
+}
+
+@media (max-width: 576px){
+}
+
+
+.navbar-toggler{
+    font-size: .8rem;
+}
+
+#hBuild{
+    margin-top: 8rem;
+}
+
+@media (max-width: 576px){
+    #hBuild{
+        margin-top: 4rem;
+    }
+}
+
+#linkHeader:hover{
+    color:  silver !important;
+    border-color: silver !important;
+    text-decoration: none;
+}
+
+.nav-link:hover{
+    color: silver !important;
+}
+
+/* main */
+
+#logoAb:hover{
+    color: var(--Bleu);
+    border-color: crimson !important;
+    cursor: pointer;
+}
+
+#navBarPro{
+    flex-direction: row !important;
+}
+
+#ulRW{
+    list-style: none;
+}
+
+.linksRW:hover{
+    text-decoration: none;
+}
+
+#cardQuatre{
+    margin-bottom: 10em;
+}
+
+#video{
+    background-image: url(../img/ct1.jpg);
+    background-size: cover;
+}
+
+#videoFade{
+    background-color: rgba(34, 29, 107, 0.5);
+}
+
+#circlePlay{
+    background-color: rgba(255, 255, 255, 0.5);
+    transition: transform .3s ease-in-out ;
+}
+
+#circlePlay:hover{
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+.carousel-indicators li{
+    background-color: rgb(156, 156, 156);
+    height: 5px;
+}
+
+.carousel-indicators li.active{
+    background-color: rgb(255, 153, 0);
+}
+
+.imgCar{
+    width: 100px;
+    height: 100px;
+}
+
+@media (max-width: 576px){
+    .imgCar{
+        width: 60px;
+        height: 60px;
+    }
+}
+
+.opLogo{
+    opacity: .5;
+    transition: transform .2s ease-in-out ;
+}
+
+.opLogo:hover{
+    opacity: 1;
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+
+    /* footer */
+
+footer{
+    background-color: var(--Marine);
+}
+
+#imputSub{
+    color: white !important;
+    background-color: var(--Bleu);
+    text-align: center;
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+}
+
+#btnSub{
+    color: var(--Marine);
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.logosFoot{
+    background-color: var(--Bleu);
+}
