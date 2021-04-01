@@ -25,7 +25,7 @@ h1, h2, h3, h4, h5, h6{
 }
 
 h1{
-    font-size: 5rem;
+    font-size: 8rem;
 }
 
 h2{
@@ -33,6 +33,9 @@ h2{
 }
 
 @media (max-width: 992px){
+    h1{
+        font-size: 6rem;
+    }
     h2{
         font-size: 2rem;
     }
@@ -40,13 +43,13 @@ h2{
 
 @media (max-width: 768px){
     h1{
-        font-size: 3rem;
+        font-size: 4rem;
     }
 }
 
 @media (max-width: 576px){
     h1{
-        font-size: 2rem;
+        font-size: 3rem;
     }
 }
 
@@ -54,33 +57,30 @@ h2{
 
 header{
     background-image: url("../img/header-bg.jpg");
-    background-size: 100%;
+    background-size: cover;
+    height: 90vh;
 }
 
 #headerCont{
     
     background-color: rgba(34, 29, 107, 0.5);
+    background-size: cover;
+    height: 90vh;
 }
 
-@media (max-width: 1275px){
-    header{
-        background-size: 1275px;
-    }
-}
-
-#fadeHeader{
-    background-color: rgba(34, 29, 107, 0.5);
-    height: 60.8%;
-}
 
 #logoArc{
     font-family: RoboH;
-    font-size: 2rem;
+    font-size: 3rem;
     transform: rotate(-90deg) scale(3.5) translate(-42%, 105%);
     opacity: 0.1;
 }
 
 @media (max-width: 992px){
+
+    #logoArc{
+        font-size: 2rem;
+    }
 
     #navBar{
         background-color: var(--Marine);
@@ -102,12 +102,25 @@ header{
 }
 
 #hBuild{
-    margin-top: 8rem;
+    margin-top: 11rem;
+    font-size: 1.5rem;
 }
+
+@media (max-width: 768px){
+    #hBuild{
+        margin-top: 14rem;
+        font-size: 1rem;
+    }
+}
+
 
 @media (max-width: 576px){
     #hBuild{
-        margin-top: 4rem;
+        margin-top: 8rem;
+    }
+
+    #logosSoc{
+        margin-top: 17rem  !important;
     }
 }
 
@@ -148,10 +161,12 @@ header{
 #video{
     background-image: url(../img/ct1.jpg);
     background-size: cover;
+    height: 90vh;
 }
 
 #videoFade{
     background-color: rgba(34, 29, 107, 0.5);
+    height: 90vh;
 }
 
 #circlePlay{
